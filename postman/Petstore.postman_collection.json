@@ -18,11 +18,19 @@
 								"exec": [
 									"pm.test(\"test\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
+<<<<<<< HEAD
 									"    pm.environment.set(\"petID\", jsonData.id);\r",
 									"});"
 								],
 								"type": "text/javascript",
 								"packages": {}
+=======
+									"    console.log(jsonData)\r",
+									"    pm.environment.set(\"petID\", jsonData.id);\r",
+									"});"
+								],
+								"type": "text/javascript"
+>>>>>>> 1f6f472103fad035de56ee456a6220a7f336ce36
 							}
 						},
 						{
@@ -31,8 +39,12 @@
 								"exec": [
 									""
 								],
+<<<<<<< HEAD
 								"type": "text/javascript",
 								"packages": {}
+=======
+								"type": "text/javascript"
+>>>>>>> 1f6f472103fad035de56ee456a6220a7f336ce36
 							}
 						}
 					],
@@ -41,7 +53,11 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
+<<<<<<< HEAD
 							"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+=======
+							"raw": "{\r\n  \"id\": {{$randomInt}},\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+>>>>>>> 1f6f472103fad035de56ee456a6220a7f336ce36
 							"options": {
 								"raw": {
 									"language": "json"
@@ -78,7 +94,11 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
+<<<<<<< HEAD
 							"raw": "{\n  \"id\": 0,\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string1\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+=======
+							"raw": "{\n  \"id\": {{petID}},\n  \"category\": {\n    \"id\": 0,\n    \"name\": \"string1\"\n  },\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"string\"\n  ],\n  \"tags\": [\n    {\n      \"id\": 0,\n      \"name\": \"string\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+>>>>>>> 1f6f472103fad035de56ee456a6220a7f336ce36
 							"options": {
 								"raw": {
 									"language": "json"
