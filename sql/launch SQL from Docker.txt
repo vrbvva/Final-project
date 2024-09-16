@@ -1,0 +1,14 @@
+1. Установить image mysql
+	docker pull mysql:latest
+2. Проверить список установленных image
+	docker image ls
+3. Посмотреть список созданных контейнеров
+	docker ps
+4. Создание контейнера "MySQL"
+	docker run --name MySQL -e MYSQL_ROOT_PASSWORD=sql123 -d mysql
+5. Запуск контейнера "MySQL" на WIN
+	winpty docker exec -it MySQL bash
+6. Запуск mysql
+	mysql -u root -p
+7. Выйти из контейнера
+	exit

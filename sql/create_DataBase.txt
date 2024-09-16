@@ -1,0 +1,15 @@
+1. Создать базу данных
+	create database BANK;
+2. Начать работу с созданной базой данных
+	use BANK;
+3. Создать таблицу
+	create table card (card_id int not null, user_id int not null, balance decimal, primary key (card_id), foreign k
+	ey (user_id) references users_data(user_id));
+4. Добавить данные в таблицы
+	 insert into card (card_id, user_id, balance) values (1, 2, '50000');
+5. Показать все таблицы, созданные в текущей базе данных
+	show tables;
+6. Показать данные конкретной таблицы
+	select * from card;
+7. Показать структуру конкретной таблицы;
+	show columns from card;
