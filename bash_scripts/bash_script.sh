@@ -5,13 +5,13 @@ echo $var1
 #ввод расширения файла
 
 echo "Введите формат файла"
-read f
-result=$(find . -wholename "*.$f")
+read var1
+result=$(find . -wholename "*.$var1")
 
 #поиск файла по введённому расширению и его копирование в новую папку
 
 if [[ -z $result ]]; then
 echo "Файл с данным расширением не найден"
 else
-mkdir ~/only_$f && cp $result only_$f
+mkdir ~/only_$var1 && cp $result only_$var1
 fi
