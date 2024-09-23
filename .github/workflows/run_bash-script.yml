@@ -1,6 +1,6 @@
 name: Run Bash-script
 on: 
-  push: branches: [ "main" ]
+  push
 jobs:
   Bash-script:
     runs-on: ubuntu-latest
