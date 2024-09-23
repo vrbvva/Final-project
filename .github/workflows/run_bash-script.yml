@@ -10,5 +10,5 @@ jobs:
     - name: ls
       run: ls -la
     - name: Run Bash-script
-      run: ./bash_scripts/bash_script.sh txt
+      run: bash_scripts/bash_script.sh txt
       
