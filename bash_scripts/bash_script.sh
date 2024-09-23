@@ -13,5 +13,5 @@ result=$(find . -wholename "*.$var1")
 if [[ -z $result ]]; then
 echo "Файл с данным расширением не найден"
 else
-mkdir ~/only_$var1 && cp $result only_$var1
+mkdir ~/only_$var1 && cp $result ~/only_$var1
 fi
