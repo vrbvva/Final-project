@@ -8,4 +8,4 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Run Echo
-      run: echo "Hello, world! Today is ..."
+      run: echo "Hello, world! Today is $(date)"
