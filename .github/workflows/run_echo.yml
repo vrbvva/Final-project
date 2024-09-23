@@ -1,0 +1,11 @@
+name: Run "Hello, world! Today is ..."
+on: 
+  push
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Run Echo
+      run: echo "Hello, world! Today is ..."
