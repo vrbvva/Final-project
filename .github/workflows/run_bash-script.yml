@@ -8,5 +8,5 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Run Bash-script
-      run: ./bash_script.sh txt
+      run: ./Bash_script/bash_script.sh txt
       
