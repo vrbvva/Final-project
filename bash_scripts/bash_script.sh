@@ -1,10 +1,10 @@
 #!/bin/bash
-var1=$1
-echo $var1
 
 #ввод расширения файла
 
 echo "Введите формат файла"
+var1=$1
+echo $var1
 read var1
 result=$(find . -wholename "*.$var1")
 
